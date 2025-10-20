@@ -1,12 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native'; // TODO: replace Text with ui/Text after export
+import { View } from 'react-native';
+import { Text } from '../ui'; // Fixed: using UI Text instead of RN Text
 import { styles } from '../../styles/styles';
 
-/**
- * Custom/AboutMe
- * Shows name and registration number at the top.
- * Props: name (string), regNo (string)
- */
 export default function AboutMe({ name, regNo }) {
   return (
     <View style={styles.header}>
